@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <title>Enrollment Form</title>
+</head>
+<body>
+    <div id="sef">
+        <h2>Student Enrollment Form</h2>
+     
+    </div>
+    <div class="row no-gutters">   
+        <div class="col-md-6 no-gutters">
+            <div class="leftside">
+           <h3 style="text-align: center; color: crimson ;">Register Here</h3>
+            <table id="reg-table">
+               <tr>
+                    <td>
+                        <label> Name </label>
+                    </td>
+                    <td>
+                        <form>
+                            <input type="text" id="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label> Email </label>
+                    </td>
+                    <td>
+                        <input type="text" id="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label> Website </label>
+                    </td>
+                    <td>
+                        <input type="text" id="website">
+                    </td>
+                </tr>           
+                <tr>
+                    <td>
+                        <label> Image Link </label>
+                    </td>
+                    <td>
+                        <input type="text" id="image">
+                    </td>
+                </tr>           
+                <tr>
+                    <td>
+                        <label> Gender </label>
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" id="male" value="Male">   Male<br>
+                        <input type="radio" name="gender" id="female" value="Female">   Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label> Skills </label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="skills" id="html" value="HTML">   HTML
+                        <input type="checkbox" name="skills" id="css" value="CSS">   CSS
+                        <input type="checkbox" name="skills" id="js" value="JavaScript">   JavaScript
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="reset" value="Clear" class="btn btn-secondary">
+                        <button type="button" onclick="displayStudents()" class="btn btn-danger">Submit</button>
+                    </td>
+                </tr>
+                    
+            </form>       
+                 </table>
+            
+            </div>
+        </div>
+        <div class="col-md-6 no-gutters">
+            <div class="rightside">
+                <h3 style="text-align: center; color: darkred  ;">Enrolled Students</h3>
+                <table id="displayTable" class="table-success"> 
+                    <tr>
+                        <th>
+                            Image
+                        </th>
+                        <th>
+                            Description
+                        </th>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"> </script>
+</body>
+</html>
